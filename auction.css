@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: linear-gradient(45deg, #01012d, #170638, #000000, #212020) !important;
+}
+.container{
+    padding: 30px;
+    font-family: 'poppins',sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 30px;
+}
+h1{
+    background: linear-gradient(45deg, #ff8c00, #ff00ff, #00bfff);
+    -webkit-background-clip: text;
+    color: transparent;
+   font-family: "Dancing Script", serif;
+   font-size: 80px;
+   text-align: center;
+   margin-top: 10%;
+}
+.container h4{
+    
+    color: #fff;
+    font-weight: 800;
+    font-size: 30px;
+    background: linear-gradient(45deg, #ff8c00, #ff00ff, #00bfff);
+    -webkit-background-clip: text;
+    color: transparent;
+   font-family: "Dancing Script", serif;
+}
+.container p{
+    margin-bottom: 15px;
+    color: #fff;
+    
+}
+.container .right-picture,.container .left-picture{
+    width: 400px;
+    position: relative;
+    box-shadow: 0 0 5px rgb(121, 70, 113);
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 10px;
+
+}
+.container .right-picture{
+    height:29vh ;
+    width: 390px;
+}
+.thumbnail::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 8px solid #fff;
+    z-index: 2;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.thumbnail img{
+    width: 20vw;
+    height:35vh ;
+    border-radius: 8px;
+    transform: scale(1) rotate(0deg);
+    transition: all .5s linear;
+}
+.thumbnail.right img{
+    height: 10px;
+}
+.container .right-picture:hover ,.container .left-picture:hover {
+    transform: scale(1.1) rotate(-0deg);
+}
+.container .right-picture{
+    float: right;
+    margin-left: 20px;
+}
+.container .left-picture{
+    float: left;
+    margin-right: 20px;
+}
+@media screen and (max-width:767px){
+    .thumbnail.right{
+        float: none;
+        margin-left: 0px;
+    }
+    .thumbnail.left{
+        float: none;
+        margin-right: 00px;
+    }
+    .thumbnail{
+        width: 100%;
+    }
+}

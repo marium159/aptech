@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Cards with Gradient</title>
+  <link rel="stylesheet" href="furniture.css">
+    <!-- ......css link..... -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ........top title link....... -->
+    <link rel="icon" href="img/title logo.jpg">
+    <!-- ......fonts link..... -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <!-- ..........bootstrap css link....... -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="popup.css">
+ 
+</head>
+<body>
+
+  <div class="content">
+
+  </div>
+
+  <!-- Back to Home Button -->
+  <div class="back-to-home" id="backButton">
+      <a href="index.html" id="back-link"> 👈</a>
+  </div>
+
+  <script src="script.js">
+      document.getElementById('backButton').addEventListener('click', function () {
+          window.location.href = '/'; // Home page ka URL yahaan daalein
+      });
+  </script>
+
+  <!-- Section 1 -->
+  <section class="furniture-products">
+    
+    <h1>Modern Furniture for Contemporary Homes
+    </h1>
+    <div class="cards">
+      <div class="card">
+        <img src="img/full bed.webp" alt="Furniture 1" class="card-img-top">
+        <div class="card-body">
+            <p class="card-text">Full size Sofacum bed lifetime warranty, Furniture.</p>
+            <button class="btn" onclick="openPopup('product1')">Starting price $12,452</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/lamp.jpg" alt="Furniture 2" class="card-img-top">
+        <div class="card-body">
+          <p class="card-text"> LED Lamp For Home Decorations And Event Decor</p>
+          <button class="btn" onclick="openPopup('product2')">Starting price $12,452</button>
+            
+        </button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/2 chairs purple.jpg" alt="Furniture 3" class="card-img-top">
+        <div class="card-body">
+          <p class="card-text">Bedroom Chairs (New Style) FULL SET And Coutomize color
+            <p>
+          <button class="btn"onclick="openPopup('product3')">Starting price $12,452</button>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2 -->
+  <section class="antiques-products">
+    <h1></h1>
+    <div class="cards">
+      <div class="card">
+        <img src="img/img4.jpg" alt="Antique 4" class="card-img-top">
+        <div class="card-body">
+          <p class="card-text">Puffy Setti Dewan 2Seater (Customizeable).</p>
+          <button class="btn"onclick="openPopup('product4')">Starting price $12,452</button>>
+            </button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/hang chair.jpg" alt="Antique 5" class="card-img-top">
+        <div class="card-body">
+          <p class="card-text">
+            Hanging chair or Hanging swing with stand and 4 cousins</p>
+          <button class="btn"onclick="openPopup('product5')">Starting price $14,452</button>
+            
+            </button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/hang 4 legs.jpg" alt="Antique 6" class="card-img-top">
+        <div class="card-body">
+          <p class="card-text">Hanging chair & Hanging swing With stand and 4 red cousins
+            </p>
+          <button class="btn"onclick="openPopup('product6')">Starting price $12,452</button> 
+          
+            </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3 -->
+  <section class="furniture-products">
+    <h1></h1>
+    <div class="cards">
+      <div class="card">
+        <img src="img/shelf.jpg" alt="Furniture 7" class="card-img-top">
+        <div class="card-body">
+          <p class="card-text">Brown D3 69 x 24 Inch Wooden Hanger </p>
+          <button class="btn"onclick="openPopup('product7')">Starting price $10,452</button>
+            </button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/last chair.jpg" alt="Furniture 8" class="card-img-top">
+        <div class="card-body">
+          <p class="card-text">New Designee Mdf Wood Daisy Nesting Table With table Table</p>
+          <button class="btn"onclick="openPopup('product8')">Starting price $13,452</button>
+          </button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/chairs.jpg" alt="Furniture 9" class="card-img-top">
+        <div class="card-body">
+          <p class="card-text">Metal set kitchen dinner table and chairs set.</p>
+          <button class="btn"onclick="openPopup('product9')">Starting price $12,452</button>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Popup Modal -->
+    <div id="popupModal" class="popup-modal">
+      <div class="popup-content">
+        <span id="closePopupBtn" class="close-btn">&times;</span>
+        
+        <!-- Popup Left: Image -->
+        <img id="popupImage" src="https://via.placeholder.com/250x150" alt="Product Image">
+  
+        <!-- Popup Right: Details -->
+        <div class="popup-details">
+          <h2 id="popupTitle">Comfortable Sofa</h2>
+          <br>
+          <p id="popupDescription">A comfortable sofa perfect for your living room. Provides maximum comfort and durability.</p>
+          <div class="price" id="popupPrice">$499</div>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+<script>
+    // Function to open the popup
+    function openPopup(productId) {
+      const popupModal = document.getElementById('popupModal');
+      const closeBtn = document.getElementById('closePopupBtn');
+
+      // Product details (for demonstration, you can modify these)
+      let productTitle = "";
+      let productDescription = "";
+      let productPrice = "";
+      let productImage = "";
+
+      // Set content based on product clicked
+      if (productId === 'product1') {
+        productTitle = "Comfortable Sofa";
+        productDescription = "Yeh sofa aapke living room ke liye ek perfect choice hai. Iska design aur comfort aapko relaxed feel dega, aur yeh aapke space ko stylish bana dega. Isme high-quality fabric ka istemal kiya gaya hai jo long-lasting aur soft hai.";
+        productPrice = "$499";
+        productImage = "img/full bed.webp";
+      } else if (productId === 'product2') {
+        productTitle = "Stylish Lamp";
+        productDescription = "Yeh stylish lamp har kamre mein ek modern touch dalta hai. Iska unique design aur smooth finish aapke decor ko enhance karta hai. Perfect lighting ke liye yeh lamp ideal choice hai jo har space mein shine karega.";
+        productPrice = "$120";
+        productImage = "img/lamp.jpg";
+      } else if (productId === 'product3') {
+        productTitle = "Wooden Shelf";
+        productDescription = "Is wooden shelf ka design aapke ghar ke har kone ko organize karne mein madad karega. Iski solid construction aur rustic finish aapke interior ko charming bana denge. Yeh shelf books aur decorative items ko perfectly showcase karega.";
+        productPrice = "$99";
+        productImage = "img/2 chairs purple.jpg";
+      } else if (productId === 'product4') {
+        productTitle = "Puffy Setti Dewan";
+        productDescription = "Yeh Puffy Sity Diwan comfort aur elegance ka perfect combination hai. Aap isme relax kar sakte hain ya apne living space mein ek cozy touch add kar sakte hain. Iska soft cushioning aapko maximum comfort deta hai.";
+        productPrice = "$12,452";
+        productImage = "img/img4.jpg";
+      } else if (productId === 'product5') {
+        productTitle = "Hanging chair & Hanging swing";
+        productDescription = "Yeh Puffy Sity Diwan comfort aur elegance ka perfect combination hai. Aap isme relax kar sakte hain ya apne living space mein ek cozy touch add kar sakte hain. Iska soft cushioning aapko maximum comfort deta hai.";
+        productPrice = "$14,452";
+        productImage = "img/hang chair.jpg";
+      } else if (productId === 'product6') {
+        productTitle = "Hanging chair with stand";
+        productDescription = "Yeh hanging chair stand ke sath aata hai jo aapke space mein easy setup ke liye ideal hai. Iska stylish design aur strong stand aapke living area ko ek trendy touch dega. Yeh piece comfort aur style ka perfect blend hai.";
+        productPrice = "$12,452";
+        productImage = "img/hang 4 legs.jpg";
+      } else if (productId === 'product7') {
+        productTitle = "Sheilf Brown D3";
+        productDescription = "Is shelf ka sleek aur modern design aapke ghar mein ek fresh look laata hai. Yeh brown finish aapke decor ke sath easily blend ho jaata hai. Books aur decor items ko organize karne ke liye perfect hai";
+        productPrice = "$10,452";
+        productImage = "img/shelf.jpg";
+      } else if (productId === 'product8') {
+        productTitle = "Table chairs";
+        productDescription = "Yeh table chairs aapke dining room ya office space ke liye best choice hain. Comfortable aur stylish design ke saath, yeh chairs aapke home decor ko complement karte hain. Long-lasting aur sturdy material se banaye gaye hain.";
+        productPrice = "$13,452";
+        productImage = "img/last chair.jpg";
+      } else if (productId === 'product9') {
+        productTitle = "Table Dinner Set";
+        productDescription = "Yeh table chairs ka set family meals ya gatherings ke liye ideal hai. High-quality material aur comfortable seating aapko long hours tak relaxed rakhega. Yeh set aapke dining space ko elegant aur functional bana dega.";
+        productPrice = "$12,452";
+        productImage = "img/chairs.jpg";
+      }
+
+      // Update popup with the product details
+      document.getElementById('popupTitle').textContent = productTitle;
+      document.getElementById('popupDescription').textContent = productDescription;
+      document.getElementById('popupPrice').textContent = productPrice;
+      document.getElementById('popupImage').src = productImage;
+
+      // Show the popup
+      popupModal.style.display = 'flex';
+
+      // Close the popup when the close button is clicked
+      closeBtn.addEventListener('click', () => {
+        popupModal.style.display = 'none';
+      });
+
+      // Close the popup if clicked outside of the popup content
+      window.addEventListener('click', (event) => {
+        if (event.target === popupModal) {
+          popupModal.style.display = 'none';
+        }
+      });
+    }
+</script>
+</body>
+</html>

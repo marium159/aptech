@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- ........top title link....... -->
+    <link rel="icon" href="img/title logo.jpg">
+    <!-- ........stylesheet link....... -->
+    <link rel="stylesheet" href="auction.css">
+         <!-- ......css link..... -->
+         <link rel="stylesheet" href="style.css">
+         <!-- ......css link..... -->
+         <link rel="stylesheet" href="../bidspirit website/assets/css/styles.css">
+         <!-- ......fonts link..... -->
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+         <!-- ..........bootstrap css link....... -->
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+             integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+         <!-- ...........script link.......... -->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+         <link rel="stylesheet" href="assets/css/styles.css">
+         <!-- font awesome cdn link  -->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+         <link rel="stylesheet" href="Footer.css">
+         <link rel="stylesheet" href="dropdown.css">
+</head>
+<body>
+
+       <!--==================== HEADER ====================-->
+  <header class="header" id="header">
+    <nav class="nav container">
+        <!-- <a href="#" class="nav__logo">Logo</a> -->
+        <img style="width: 10%; height: 70%; object-fit: contain;" src="../bidspirit website/img/title logo.jpg"
+            alt="">
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="index.html" class="nav__link">Home</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Services</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Auctions</a>
+                    <ul class="dropdown">
+                        <li><a href="auction.html">Auction</a></li>
+                        <li><a href="upcommingauction.html">upcomming Auctions</a></li>
+                        <li><a href="Sponsored.html">Sponsered Auctions</a></li>
+                    </ul>
+                </li>
+                <li class="nav__item">
+                    <a href="gallery.html" class="nav__link">Gallery</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="about.html" class="nav__link">About us</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="contact.html" class="nav__link">Contact Us</a>
+                </li>
+            </ul>
+
+            <!-- Close button -->
+            <div class="nav__close" id="nav-close">
+                <i class="ri-close-line"></i>
+            </div>
+        </div>
+
+        <div class="nav__actions">
+            <!-- Search button -->
+            <i class="ri-search-line nav__search" id="search-btn"></i>
+
+            <!-- Login button -->
+            <i class="ri-user-line nav__login" id="login-btn"></i>
+
+            <!-- Toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!--==================== SEARCH ====================-->
+<div class="search" id="search">
+    <form action="" class="search__form">
+        <i class="ri-search-line search__icon"></i>
+        <input type="search" placeholder="What are you looking for?" class="search__input">
+    </form>
+
+    <i class="ri-close-line search__close" id="search-close"></i>
+</div>
+
+<!--==================== LOGIN ====================-->
+<div class="login" id="login">
+    <form action="" class="login__form">
+        <h2 class="login__title">Log In</h2>
+
+        <div class="login__group">
+            <div>
+                <label for="email" class="login__label">Email</label>
+                <input type="email" placeholder="Write your email" id="email" class="login__input">
+            </div>
+
+            <div>
+                <label for="password" class="login__label">Password</label>
+                <input type="password" placeholder="Enter your password" id="password" class="login__input">
+            </div>
+        </div>
+
+        <div>
+            <p class="login__signup">
+                You do not have an account? <a href="#">Sign up</a>
+            </p>
+
+            <a href="#" class="login__forgot">
+                You forgot your password
+            </a>
+
+            <button type="submit" class="login__button">Log In</button>
+        </div>
+    </form>
+
+    <i class="ri-close-line login__close" id="login-close"></i>
+</div>
+
+<!--=============== MAIN JS ===============-->
+<!-- header -->
+
+     <br><br>
+    <h1>Auctions</h1>
+    <div class="container">
+        <div class="thumbnail.right">
+            <img class="right-picture" src="img/coins.jpg" alt="">
+        </div>
+        <h4>"An Antique Coins"</h4>
+        <br>
+        <p>The image shows a cluster of ancient coins half-buried in a fine layer of golden sand, illuminated by warm, directional light that enhances their texture and details. These coins, rich in historical significance, bear intricate engravings, symbols, and figures, each telling a story of a bygone era.
+         The coin on the left bears floral or abstract motifs, while another has geometric patterns and faint inscriptions that have been partially obscured by the passage of time. The coin in the background, darker and less defined, seems to have a circular hole at its center, possibly signifying its use as an ornament or for ceremonial purposes.</p>
+          <br>
+        <!-- <p>The warm tones of the sand and the earthy, tarnished hues of the coins evoke a sense of discovery, as if they were recently unearthed from an archaeological dig. The setting feels intimate and timeless, inviting the viewer to ponder the hands that once held these coins and the civilizations they belonged to. This visual composition celebrates history and the enduring allure of ancient artifacts, reminding us of the stories hidden beneath the surface of the earth.</p> -->
+
+        <div class="thumbnail.left">
+            <img class="left-picture" src="img/woman.PNG" alt="">
+        </div>
+        <h4>"A Beautylady"</h4>
+        <br>
+        <p>This image depicts a beautifully detailed painting, known as "The Lady of Shalott," by John William Waterhouse. It portrays a young woman seated in a small boat, which glides through a quiet, reflective river surrounded by lush vegetation. The woman is dressed in an ethereal white gown that flows around her, emphasizing her delicate and melancholic appearance. Her long, auburn hair cascades over her shoulders, and her gaze is both distant and sorrowful, as if lost in deep thought or bound by a tragic fate.</p>
+        <br><br>
+            <!-- <p>The boat is intricately adorned with patterned tapestries and a shield bearing a heraldic emblem, suggesting a connection to medieval legend or romance. Three candles, symbolizing life or hope, are mounted at the front of the boat, though two have already extinguished, perhaps alluding to the fleeting nature of life or love. The water reflects the muted tones of the surrounding greenery, creating a serene but somber atmosphere. The distant background reveals a dense, misty forest, which enhances the sense of isolation and mystery that permeates the scene. This artwork vividly captures the themes of longing, destiny, and sorrow, drawing viewers into the poetic narrative it conveys.</p> -->
+
+                <div class="thumbnail.right">
+                    <img class="right-picture" src="img/outdoor.PNG" alt="">
+                </div>
+                <h4>"At The Park"</h4>
+                <br>
+                <p>This painting depicts a vibrant outdoor scene, likely of a fair or a gathering in a park. The artwork features a dynamic mix of colors, creating a lively atmosphere. In the background, tall trees with autumn-like foliage frame the sky, adding depth and a natural setting. The center of the image showcases a crowd of people gathered around a structure that appears to be a carousel or a gazebo, painted with soft, muted tones that contrast with the darker hues of the figures.</p>
+                <!-- <p>The foreground shows an open grassy area bordered by ropes, suggesting an organized space or pathway for visitors. The brushstrokes are bold and impressionistic, giving the painting a textured and energetic feel. The overall composition captures the essence of a festive event, with an emphasis on movement, color, and the interaction of people with their environment.</p> -->
+    </div>
+      <br><br>
+    <footer>
+        <div class="row">
+            <div class="col">
+                <img src="./img/logo.png" class="logo">
+                <p>Bidspirit is a popular online auction platform that specializes in live and timed auctions for
+                    various types of collectibles, including art, antiques, and other valuable items. The platform
+                    provides a space for auction houses to host their sales and allows users to bid on items remotely in
+                    real-time.</p>
+            </div>
+            <div class="col">
+                <h3>About Us <div class="underline"><span></span></div>
+                </h3>
+                <p>Aptech</p>
+                <p>Karachi,Pakistan</p>
+                <p>.......</p>
+                <p class="email-id">BSbidspirit@gmail.com</p>
+                <h4>+92-0987123564</h4>
+            </div>
+            <div class="col">
+                <h3>Links<div class="underline"><span></span></div>
+                </h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Newsletter<div class="underline"><span></span></div>
+                </h3>
+                <form>
+                    <img class="icon1" src="./img/envelope icon.png" alt="" style="height: 18px; width:18px;">
+                    <input type="email" placeholder=" Enter your email-id" required>
+                    <button type="submit"><img class="icon2" src="./img/right arrow icon.png" alt=""></button>
+                </form>
+                <div class="social-icons">
+                    <i class=""><img src="./img/facebook-icon.png" alt=""></i>
+                    <i class=""><img src="./img/whatsapp-icon.png" alt=""></i>
+                    <i class=""><img src="./img/instagram-icon.png" alt=""></i>
+                    <i class=""><img src="./img/twitter-icon.png" alt=""></i>
+                    <!-- <i class=""><img src="youtube-icon.png" alt=""></i> -->
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copy-right">© 2025,Powered by Bidspirit</p>
+    </footer>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

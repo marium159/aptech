@@ -1,0 +1,214 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(45deg, #01012d, #170638, #000000, #212020) !important;
+}
+
+
+.furniture-products{
+  margin-top: -6%;
+}
+
+
+.furniture-products h1 {
+  text-align: center;
+  font-size: 41px;
+  background: linear-gradient(45deg, #ff8c00, #ff00ff, #00bfff);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: "Dancing Script", serif;
+}
+
+
+
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+
+
+.card {
+  background:linear-gradient(45deg, #01012d, #170638, #000000, #212020) !important;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px; /* Adjusted to 30% for 3 cards per row */
+  transition: transform 0.2s ease-in-out;
+
+}
+
+
+
+.card {
+
+  background-color:transparent;  
+color: white;
+border-radius: 10px;
+width: 23%;
+box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+border: 1px solid rgba(255,255,255,0.3);
+overflow: hidden;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+position: relative;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+
+
+
+.card-img-top {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 15px;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color:white;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color:white;
+  margin-bottom: 15px;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background:linear-gradient(purple,rgba(1,1,31));
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition:  0.3s ease;
+}
+
+.btn:hover {
+background-color: #9b59b6; 
+}
+
+.furniture-products {
+  padding: 150px 10px !important;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 100%;
+  }
+}
+
+
+           /* back button  */
+           .content {
+            padding: 20px;
+        }
+        
+        .back-to-home {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: purple ;
+            color: white;
+            width: 50px;            /* Set width */
+            height: 50px;           /* Set height */
+            border-radius: 50%;     /* Make it circular */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;        /* Adjust text size */
+            cursor: pointer;
+            text-align: center;
+            font-weight: bold;
+            box-shadow:  linear-gradient(45deg, #ff8c00, #ff00ff, #00bfff);;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        
+        /* Style the link */
+        .back-to-home a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        /* Hover effect */
+        .back-to-home:hover {
+            background-color:#9b59b6;
+        }
+
+
+/* ................popup cards............ */
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: white;
+  color: #0f0f33;
+  font-size: 11px;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+}
+
+.popup-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.popup .close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn {
+  background-color: #28a745;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: #218838;
+}

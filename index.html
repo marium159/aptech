@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bidspirit</title>
+
+    <!-- ......css link..... -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ......css link..... -->
+    <link rel="stylesheet" href="../bidspirit website/assets/css/styles.css">
+    <!-- ........top title link....... -->
+    <link rel="icon" href="img/title logo.jpg">
+    <!-- ......fonts link..... -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <!-- ..........bootstrap css link....... -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- ...........script link.......... -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="Footer.css">
+    <link rel="stylesheet" href="dropdown.css">
+    <link rel="stylesheet" href="tricker.css">
+
+</head>
+
+<body>
+
+    <!-- ..........home welcome message.. -->
+       <!-- Overlay -->
+       <div class="overlay" id="overlay"></div>
+
+       <!-- Custom Alert -->
+       <div class="custom-alert" id="customAlert">
+           <h2>Welcome to Bidspirit!</h2>
+           <p>Your one-stop platform for exciting auctions and opportunities. We are thrilled to have you here!</p>
+           <button onclick="closeAlert()">Close</button>
+       </div>
+   
+       <script>
+           // Close the custom alert
+           function closeAlert() {
+               document.getElementById('customAlert').style.display = 'none';
+               document.getElementById('overlay').style.display = 'none';
+           }
+       </script>
+
+
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <!-- <a href="#" class="nav__logo">Logo</a> -->
+            <img style="width: 10%; height: 70%; object-fit: contain;" src="../bidspirit website/img/title logo.jpg"
+                alt="">
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Services</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Auctions</a>
+                        <ul class="dropdown">
+                            <li><a href="auction.html">Auction</a></li>
+                            <li><a href="upcommingauction.html">upcomming Auctions</a></li>
+                            <li><a href="Sponsored.html">Sponsered Auctions</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <a href="gallery.html" class="nav__link">Gallery</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">About us</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="contact.html" class="nav__link">Contact Us</a>
+                    </li>
+                </ul>
+
+                <!-- Close button -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav__actions">
+                <!-- Search button -->
+                <i class="ri-search-line nav__search" id="search-btn"></i>
+
+                <!-- Login button -->
+                <i class="ri-user-line nav__login" id="login-btn"></i>
+
+                <!-- Toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== SEARCH ====================-->
+    <div class="search" id="search">
+        <form action="" class="search__form">
+            <i class="ri-search-line search__icon"></i>
+            <input type="search" placeholder="What are you looking for?" class="search__input">
+        </form>
+
+        <i class="ri-close-line search__close" id="search-close"></i>
+    </div>
+
+    <!--==================== LOGIN ====================-->
+    <div class="login" id="login">
+        <form action="" class="login__form">
+            <h2 class="login__title">Log In</h2>
+
+            <div class="login__group">
+                <div>
+                    <label for="email" class="login__label">Email</label>
+                    <input type="email" placeholder="Write your email" id="email" class="login__input">
+                </div>
+
+                <div>
+                    <label for="password" class="login__label">Password</label>
+                    <input type="password" placeholder="Enter your password" id="password" class="login__input">
+                </div>
+            </div>
+
+            <div>
+                <p class="login__signup">
+                    You do not have an account? <a href="#">Sign up</a>
+                </p>
+
+                <a href="#" class="login__forgot">
+                    You forgot your password
+                </a>
+
+                <button type="submit" class="login__button">Log In</button>
+            </div>
+        </form>
+
+        <i class="ri-close-line login__close" id="login-close"></i>
+    </div>
+
+    <!--=============== MAIN JS ===============-->
+    <!-- header -->
+
+    
+    <div class="maincontainer">
+        <section class="section hero">
+            <div class="container">
+                <h1 class="headline">Discover rate collection or <span class="span">Arts & Fines</span>
+                    <h1>
+                        <p class="section-text">We are a huge market place dedicated to connecting great artists<br> of
+                            all metalinks with their fans and unique taken collectors!</p>
+                        <a href="#" class="btn">Explore now</a>
+            </div>
+        </section>
+        <!-- .........section 2....... -->
+        <section class="services">
+            <div class="heading">
+                <h2>What we actually do?</h2>
+                <p>Discover rare collections or Arts & NFTs" ek exciting aur modern concept hai jo digital art aur
+                    collectibles ki duniya mein revolutions la raha hai. NFTs (Non-Fungible Tokens) ki madad se, ab
+                    artists apne digital artworks ko unique aur verifiable bana kar unhe global marketplace mein bech
+                    sakte
+                    <br><br>
+                </p>
+            </div>
+        </section>
+        <!-- ............carousel section......... -->
+
+        <section class="section top-collection" aria-labelledby="collection-label">
+            <div class="container">
+
+                <div class="title-wrapper">
+                    <h2 class="headline-md section-title text-center" id="collection-label">Top Arts Collections</h2>
+
+                    <a href="#" class="btn-link link:hover">
+                        <span class="span">See More</span>
+
+                        <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                    </a>
+                </div>
+
+                <div class="slider" data-slider>
+
+                    <ul class="slider-container" data-slider-container>
+
+                        <li class="slider-item">
+                            <div class="collection-card card">
+
+                                <figure class="card-banner img-holder" style="--width: 500; --height: 500;">
+                                    <img src="./img/art1.jpg" width="500" height="500" loading="lazy"
+                                        alt="Digital Collection" class="img-cover">
+                                </figure>
+
+                                <div class="card-content">
+
+                                    <div class="card-profile">
+                                        <img src="./img/avatar-1.jpg" width="64" height="64" loading="lazy"
+                                            alt="CutieGirl profile">
+
+                                        <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
+                                    </div>
+
+                                    <h3 class="title-md card-title">
+                                        CutieGirl
+                                    </h3>
+
+                                    <p class="label-md card-author">
+                                        Explore the world of digital artistry through unique visuals and vibrant
+                                        designs.
+                                    </p>
+
+                                    <p class="card-text">starting: $500</p>
+
+                                    <!-- <a href="#" class="btn">Buy now</a> -->
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li class="slider-item">
+                            <div class="collection-card card">
+
+                                <figure class="card-banner img-holder" style="--width: 500; --height: 500;">
+                                    <img src="./img/art2.jpg" width="500" height="500" loading="lazy"
+                                        alt="Digital Collection" class="img-cover">
+                                </figure>
+
+                                <div class="card-content">
+
+                                    <div class="card-profile">
+                                        <img src="./img/avatar-2.jpg" width="64" height="64" loading="lazy"
+                                            alt="CutieGirl profile">
+
+                                        <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
+                                    </div>
+
+                                    <h3 class="title-md card-title">
+                                        ArtMaster
+                                    </h3>
+
+                                    <p class="label-md card-author">
+                                        Dive into the abstract world with vibrant colors and stunning geometric
+                                        patterns.
+                                    </p>
+
+                                    <p class="card-text">starting: $700</p>
+
+                                    <!-- <a href="#" class="btn">Buy now</a> -->
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li class="slider-item">
+                            <div class="collection-card card">
+
+                                <figure class="card-banner img-holder" style="--width: 500; --height: 500;">
+                                    <img src="./img/art3.jpg" width="500" height="500" loading="lazy"
+                                        alt="GIF Collection" class="img-cover">
+                                </figure>
+
+                                <div class="card-content">
+
+                                    <div class="card-profile">
+                                        <img src="./img/avatar-3.jpg" width="64" height="64" loading="lazy"
+                                            alt="ButterFly profile">
+
+                                        <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
+                                    </div>
+
+                                    <h3 class="title-md card-title">
+                                        NatureLover
+                                    </h3>
+
+                                    <p class="label-md card-author">
+                                        This collection celebrates the beauty and serenity of nature. Featuring lush
+                                        landscapes.
+
+                                    <p class="card-text">starting: $600</p>
+
+                                    <!-- <a href="#" class="btn">Buy now</a> -->
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li class="slider-item">
+                            <div class="collection-card card">
+
+                                <figure class="card-banner img-holder" style="--width: 500; --height: 500;">
+                                    <img src="./img/art4.webp" width="500" height="500" loading="lazy"
+                                        alt="Sports Collection" class="img-cover">
+                                </figure>
+
+                                <div class="card-content">
+
+                                    <div class="card-profile">
+                                        <img src="./img/avatar-4.jpg" width="64" height="64" loading="lazy"
+                                            alt="NorseQueen profile">
+
+                                        <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
+                                    </div>
+
+                                    <h3 class="title-md card-title">
+                                        SportsFan
+                                    </h3>
+
+                                    <p class="label-md card-author">
+                                        Celebrate the world of sports with dynamic and action-packed art pieces
+                                    </p>
+
+                                    <p class="card-text">starting: $800</p>
+
+                                    <!-- <a href="#" class="btn">Buy now</a> -->
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li class="slider-item">
+                            <div class="collection-card card">
+
+                                <figure class="card-banner img-holder" style="--width: 500; --height: 500;">
+                                    <img src="./img/art5.jpg" width="500" height="500" loading="lazy"
+                                        alt="Photography Collection" class="img-cover">
+                                </figure>
+
+                                <div class="card-content">
+
+                                    <div class="card-profile">
+                                        <img src="./img/avatar-5.jpg" width="64" height="64" loading="lazy"
+                                            alt="BigBull profile">
+
+                                        <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
+                                    </div>
+
+                                    <h3 class="title-md card-title">
+                                        BigBull
+                                    </h3>
+
+                                    <p class="label-md card-author">
+                                        A beautiful collection showcasing stunning landscapes and moments captured in
+                                        time
+                                    </p>
+
+                                    <p class="card-text">starting: $900</p>
+
+                                    <!-- <a href="#" class="btn">Buy now</a> -->
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li class="slider-item">
+                            <div class="collection-card card">
+
+                                <figure class="card-banner img-holder" style="--width: 500; --height: 500;">
+                                    <img src="./img/art6.jpg" width="500" height="500" loading="lazy"
+                                        alt="Illustrations Collection" class="img-cover">
+                                </figure>
+
+                                <div class="card-content">
+
+                                    <div class="card-profile">
+                                        <img src="./img/avatar-6.gif" width="64" height="64" loading="lazy"
+                                            alt="Angel profile">
+
+                                        <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
+                                    </div>
+
+                                    <h3 class="title-md card-title">
+                                        Angel
+                                    </h3>
+
+                                    <p class="label-md card-author">
+                                        Dive into the world of detailed illustrations that tell unique and captivating
+                                        stories
+                                    </p>
+
+                                    <p class="card-text">starting: $650</p>
+
+                                    <!-- <a href="#" class="btn">Buy now</a> -->
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+
+                    <button class="slider-btn prev" aria-label="Slide to previous item" data-slider-prev>
+                        <ion-icon name="chevron-back-sharp" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="slider-btn next" aria-label="Slide to next item" data-slider-next>
+                        <ion-icon name="chevron-forward-sharp" aria-hidden="true"></ion-icon>
+                    </button>
+
+                </div>
+
+                <!-- <a href="#" class="btn-link link:hover">
+                    <span class="span">See More</span> -->
+                    <a href="art.html" class="btn">See more</a>
+
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- ..............explore arts work........ -->
+        <section class="explore">
+            <div class="grid">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="grid-text">
+                <h2>Explore our top Art fine collections</h2>
+                <p>All these categories—furniture, collectibles, and antiques—can be considered forms of art, depending
+                    on their craftsmanship, design, and the cultural or historical context they come from. Many
+                    collectors and art lovers consider these items not just as functional objects, but as
+                    representations of artistic expression and historical artistry.</p>
+            </div>
+        </section>
+        <br><br>
+        <!-- ..............furniture section....... -->
+        <section class="furniture-products">
+            <div class="furniture-text">
+                <h1 class="text-center">Furnitures</h1>
+                <br><br>
+                <!-- Single .cards container for all items -->
+                <div class="cards">
+                    <div class="card">
+                        <img class="card-img-top" src="img/furniture1.jpg" alt="Sofa Set">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Sofa Set</h5>
+                            <p class="card-text">This luxurious sofa set adds comfort and style to your living room.a blend of
+                                modern design</p>
+                            <p class="price">starting: $599</p>
+                            <!-- <a href="#" class="btn">Buy Now</a> -->
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="img/furniture2.jpg" alt="Coffee Table">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Coffee Table</h5>
+                            <p class="card-text">A stylish coffee table made of wood, perfect for any modern living
+                                space, offeringa blend of modern design</p>
+                            <p class="price">starting: $199</p>
+                            <!-- <a href="#" class="btn">Buy Now</a> -->
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="img/furniture3.webp" alt="Dining Set">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Dining Set</h5>
+                            <p class="card-text">A sleek and elegant dining set that fits 6 people, offering a blend of
+                                modern design.</p>
+                            <p class="price">starting: $799</p>
+                            <!-- <a href="#" class="btn">Buy Now</a> -->
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="card">
+                            <img class="card-img-top" src="img/furniture4.jpg" alt="Bookshelf">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Bookshelf</h5>
+                                <p class="card-text">An elegant bookshelf to organize your books and decorative items,
+                                    made of solid wood.</p>
+                                <p class="price">starting: $150</p>
+                                <!-- <a href="#" class="btn">Buy Now</a> -->
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="img/furniture5.jpg" alt="Bed Frame">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Bed Frame</h5>
+                                <p class="card-text">A strong and sturdy bed frame with a minimalist design that suits
+                                    any bedroom style.</p>
+                                <p class="price">starting: $349</p>
+                                <!-- <a href="#" class="btn">Buy Now</a> -->
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="img/furniture6.jpg" alt="Office Chair">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Office Chair</h5>
+                                <p class="card-text">A comfortable office chair with adjustable height and ergonomic
+                                    support,</p>
+                                <p class="price">starting: $120</p>
+                                <!-- <a href="#" class="btn">Buy Now</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="furniture.html" class="btn">See more</a>
+        </section>
+
+        <!-- ................furniture popups section.............. -->
+
+
+        <!-- .............section antiques cards............. -->
+        <section class="antiques-products">
+            <div class="antiques-text">
+                <h1>Antiques</h1>
+                <br><br>
+                <div class="cards">
+                    <div class="card">
+                        <img class="card-img-top" src="img/antique1.webp" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Antique Vase</h5>
+                            <p class="card-text">This antique vase is a beautiful collector's item with intricate
+                                detailing.</p>
+                            <p class="price">starting: $299</p>
+                            <!-- <a href="#" class="btn">Buy Now</a> -->
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="img/antique2.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Vintage Chair</h5>
+                            <p class="card-text">A vintage chair from the early 20th century with a classic design,
+                                perfect for adding charm to any room.</p>
+                            <p class="price">starting: $199</p>
+                            <!-- <a href="#" class="btn">Buy Now</a> -->
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="img/antique3.webp" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Classic Mirror</h5>
+                            <p class="card-text">A stunning classic mirror with ornate carvings, adding elegance to any
+                                space.</p>
+                            <p class="price">starting: $450</p>
+                            <!-- <a href="#" class="btn">Buy Now</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <img class="card-img-top" src="img/antique4.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Old Wooden Chest</h5>
+                            <p class="card-text">An antique wooden chest with metal accents, perfect for storage and
+                                decoration.</p>
+                            <p class="price">starting: $350</p>
+                            <!-- <a href="#" class="btn">Buy Now</a> -->
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="img/antique5.webp" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Antique Clock</h5>
+                            <p class="card-text">A classic wall clock with brass elements, bringing timeless style to
+                                any home.</p>
+                            <p class="price">starting: $129</p>
+                            <!-- <a href="#" class="btn">Buy Now</a> -->
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="img/antique6.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Vintage Table</h5>
+                            <p class="card-text">This vintage table features a unique design with beautiful woodwork and
+                                craftsmanship.</p>
+                            <p class="price">starting: $799</p>
+                            <!-- <a href="#" class="btn">Buy Now</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="antique.html" class="btn">See more</a>
+        </section>
+
+        <!-- ...............section collatrible cards,,,,,,,,, -->
+        <section class="collectible-products">
+            <div class="collectible-text">
+                <h1>Collectibles</h1>
+                <br><br>
+                <div class="cards">
+                    <div class="card">
+                        <img class="card-img-top" src="img/collectible1.webp" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Antique Vase</h5>
+                            <p class="card-text">A beautiful porcelain vase from the 18th century.</p>
+                            <p class="price">starting: $500</p>
+                            <!-- <a href="#" class="btn">Buy Now</a> -->
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="img/collectible2.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Vintage Clock</h5>
+                            <p class="card-text">An exquisite brass clock dating back to the Victorian era.</p>
+                            <p class="price">starting: $350</p>
+                            <!-- <a href="#" class="btn">Buy Now</a> -->
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="img/collectible3.webp" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Classic Painting</h5>
+                            <p class="card-text">A stunning painting from the early 19th century.</p>
+                            <p class="price">starting: $800</p>
+                            <!-- <a href="#" class="btn">Buy Now</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <img class="card-img-top" src="img/collectible4.webp" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Antique Lamp</h5>
+                            <p class="card-text">A vintage lamp with intricate designs, perfect for any collection.</p>
+                            <p class="price">starting: $250</p>
+                            <!-- <a href="#" class="btn">Buy Now</a> -->
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="img/collectible5.webp" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Royal Vase</h5>
+                            <p class="card-text">A rare vase once belonging to the royal family.</p>
+                            <p class="price">starting: $1000</p>
+                            <!-- <a href="#" class="btn">Buy Now</a> -->
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="img/collectible6.webp" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Vintage Mirror</h5>
+                            <p class="card-text">A classic mirror framed in gold from the 19th century.</p>
+                            <p class="price">starting: $600</p>
+                            <!-- <a href="#" class="btn">Buy Now</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="collectible.html" class="btn">See more</a>
+        </section>
+
+        <!-- ...........get free trial............. -->
+        <section class="free-trial">
+            <div class="trial-container">
+                <div class="trial-text">
+                    <h1>Get a free trial</h1>
+                    <br>
+                    <p>"Unlock exclusive access to our premium Art Fine collections with a free trial! Explore rare
+                        masterpieces, bid on unique art pieces, and experience the world of fine art like never before."
+        
+                        This highlights the free trial while emphasizing the value of the art collection.</p>
+                    <br>
+                    <a href="#" class="btn">Join us</a>
+                </div>
+                <div class="trial-map">
+                    <!-- Placeholder for your map or any content you'd like to add -->
+                    <div class="map-placeholder">
+                        <!-- Here you can insert your map, e.g., Google Maps iframe -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.5483751859424!2d67.10809927443269!3d24.947450741772926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb3390008cfd9ab%3A0x50570e200b0de0fe!2sAptech%20scheme%2033!5e0!3m2!1sen!2s!4v1736382718179!5m2!1sen!2s" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <br><br>
+        <!-- .............feedback section for clients............... -->
+        <section class="feedback-section">
+            <div class="container">
+                <h2 class="feedback-title">We Value Your Feedback</h2>
+                <p class="feedback-subtitle">Let us know your thoughts on our art auctions or platform experience.</p>
+                <form class="feedback-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Feedback</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Share your feedback with us"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit Feedback</button>
+                </form>
+            </div>
+        </section>
+        <!-- .................footer.......... -->
+
+
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="script.js"></script>
+           
+    <!-- .........tricker....... -->
+    <div id="ticker">
+        <span id="tickerContent">Fetching location and time...</span>
+    </div>
+
+    <footer>
+        <div class="row">
+            <div class="col">
+                <img src="./img/logo.png" class="logo">
+                <p>Bidspirit is a popular online auction platform that specializes in live and timed auctions for
+                    various types of collectibles, including art, antiques, and other valuable items. The platform
+                    provides a space for auction houses to host their sales and allows users to bid on items remotely in
+                    real-time.</p>
+            </div>
+            <div class="col">
+                <h3>About Us <div class="underline"><span></span></div>
+                </h3>
+                <p>Aptech</p>
+                <p>Karachi,Pakistan</p>
+                <p>.......</p>
+                <p class="email-id">BSbidspirit@gmail.com</p>
+                <h4>+92-0987123564</h4>
+            </div>
+            <div class="col">
+                <h3>Links<div class="underline"><span></span></div>
+                </h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="gallery.html">gallery</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Newsletter<div class="underline"><span></span></div>
+                </h3>
+                <form>
+                    <img class="icon1" src="./img/envelope icon.png" alt="" style="height: 18px; width:18px;">
+                    <input type="email" placeholder=" Enter your email-id" required>
+                    <button type="submit"><img class="icon2" src="./img/right arrow icon.png" alt=""></button>
+                </form>
+                <div class="social-icons">
+                    <i class=""><img src="./img/facebook-icon.png" alt=""></i>
+                    <i class=""><img src="./img/whatsapp-icon.png" alt=""></i>
+                    <i class=""><img src="./img/instagram-icon.png" alt=""></i>
+                    <i class=""><img src="./img/twitter-icon.png" alt=""></i>
+                    <!-- <i class=""><img src="youtube-icon.png" alt=""></i> -->
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copy-right">© 2025,Powered by Bidspirit</p>
+    </footer>
+
+</body>
+
+</html>
